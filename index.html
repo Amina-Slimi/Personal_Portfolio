@@ -2,10 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--site responsive sur mobile. -->
     <title>Slimi-Amina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Elle charge la bibliothèque d’icônes Font Awesome (celles de tes réseaux sociaux : Instagram, GitHub, etc.), via un CDN (un serveur public qui héberge des fichiers).-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
+
 <body>
+   <header>
+      <nav>
+        <a href="#about-section">Slimi Amina</a>
+        <ul>
+            <li><a href="#about-section">A propos</a></li>
+            <li><a href="#projects-section">Projets</a></li>
+            <li><a href="skills-section">Compétences</a></li>
+            <li><a href="leave-message-section">Laisse un message</a></li>
+        </ul>
+      </nav>
+   </header> 
+
+   <main>
+      <section id="about-section">
+        <h2>Salut le monde, moi c'est Amina!</h2>
+        <figure class="headillu">
+                <img src="images/illustration.jfif" alt="illustration">
+        </figure>
+        <article class="bio">
+            <p>Salut ! Moi c'est <strong>Amina</strong>, étudiante en Master 1 Software Engineering à l'Université des Sciences et de
+               la Technologie Houari Boumediene (USTHB).Passionnée par le développement logiciel et le UX Design, 
+               j'aime concevoir des applications web à la fois performantes, bien structurées et agréables à utiliser.
+               J'aime écrire du bon code tout en créant des interfaces simples et agréables pour les utilisateurs.
+            </p>
+            <p>En dehors des cours et du code, j'aime simplement faire du sport et passer du temps sur YouTube.</p>
+        </article>
+        <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/amina-slimi-52a541299/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Amina-Slimi" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+      </section>
+    <hr>
+    <section id="projects-section">
+          <h3>Web</h3>
+  <ul class="project-list">
+    <li>
+      <a href="#" target="_blank" class="project-box">
+        <picture>
+          <source srcset="images/webp/skillx.webp" type="image/webp">
+          <img src="images/skillx.png" alt="Plateforme Skillx">
+        </picture>
+        <h4>Skillx</h4>
+        <h5><em>React, Node.js</em></h5>
+        <p>Skillx est une plateforme web de job matching qui met en relation des candidats et des offres d'emploi selon les compétences recherchées.</p>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank" class="project-box">
+        <picture>
+          <source srcset="images/webp/tirage-hadj.webp" type="image/webp">
+          <img src="images/tirage-hadj.png" alt="Site de tirage au sort pour le Hadj">
+        </picture>
+        <h4>Tirage au sort pour le Hadj</h4>
+        <h5><em>HTML, CSS, JavaScript, PHP</em></h5>
+        <p>Ce site web permet d'organiser un tirage au sort de façon simple, claire et équitable pour les participants au Hadj.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+ 
+<section class="project-subsection">
+  <h3>Logiciel</h3>
+  <ul class="project-list">
+    <li>
+      <a href="#" target="_blank" class="project-box">
+        <picture>
+          <source srcset="images/webp/jeu-2048.webp" type="image/webp">
+          <img src="images/jeu-2048.png" alt="Jeu 2048">
+        </picture>
+        <h4>Jeu 2048</h4>
+        <h5><em>C, SDL</em></h5>
+        <p>Reproduction du jeu 2048 avec une interface graphique, réalisée à la faculté en langage C avec la bibliothèque SDL.</p>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank" class="project-box">
+        <picture>
+          <source srcset="images/webp/calculatrice-assembleur.webp" type="image/webp">
+          <img src="images/calculatrice-assembleur.png" alt="Calculatrice en assembleur">
+        </picture>
+        <h4>Calculatrice en assembleur</h4>
+        <h5><em>Assembleur</em></h5>
+        <p>Calculatrice réalisée à la faculté en assembleur, pour comprendre le fonctionnement bas niveau d'un programme.</p>
+      </a>
+    </li>
+  </ul>
+
+    </section>
+    <hr>
+    <section id="skills-section">
+        <h2>Compétences</h2>
+        <ul class="skills-container">
+            <li><i class="fa-brands fa-python"></i></li>
+            <li><i class="fa-brands fa-java"></i></li>
+            <li><i class="fa-brands fa-swift"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-git-alt"></i></li>
+            <li><i class="fa-brands fa-github-alt"></i></li>
+            <li><i class="fa-solid fa-database"></i></li>
+            <li><i class="devicon-r-plain"></i></li>
+            <li><i class="devicon-c-plain-wordmark"></i></li>
+
+        </ul>
+    </section>
+
+   <hr>
+    <section id="leave-message-section">
+    <h2>Laisse un message !</h2>
+    <p>Une question, une idée, une opportunité ? Écris-moi !</p>
+    <form action="#" method="post">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    </section>
+
+   </main>
+   
+   <footer>
+        <p>&copy; 2026 Slimi Amina. Tous droits réservés.</p>
+   </footer>
+
+
     
 </body>
+
 </html>

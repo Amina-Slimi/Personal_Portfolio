@@ -1,0 +1,169 @@
+/* Base Styles */
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #eeeff1;
+    font-size: 17px; /* Set the base font size */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+@font-face {
+    font-family: "Amina";
+    src: url("fonts/amina-font.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Amina";
+    src: url("fonts/Amina-font-bold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Amina', sans-serif;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav {
+    background-color: #5D1340;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: hslargb(93, 19, 64);
+    backdrop-filter: blur(5px);
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0.625rem;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
+}
+
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh; /* Reduce the default minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(odd) {
+    background-color: #FBE3E3; /* Light gray for odd sections */
+}
+
+section:nth-of-type(even) {
+    background-color: #FDEEEE; /* White for even sections */
+}
+
+
+/* About Section */
+#about-section {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+#about-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#about-section .headsillu {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 37px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about-section .headsillu img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+#about-section .headsillu img:hover {
+    transform: scale(1.2);
+}
+
+#about-section .bio {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+}
+
+#about-section .bio p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#about-section .social-links {
+    font-size: 2.25rem;
+}
+
+#about-section .social-links a {
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+#about-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#about-section .social-links a:hover i {
+    color: #5D1340;
+    transform: scale(1.2);
+}
+
+#about-section .social-links i {
+    color: #5D1340;
+    font-weight: 500;
+}
+
+
